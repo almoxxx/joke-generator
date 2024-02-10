@@ -1,3 +1,84 @@
 body {
-  background: aquamarine;
+  background: linear-gradient(
+    99.6deg,
+    rgb(112, 128, 152) 10.6%,
+    rgb(242, 227, 234) 32.9%,
+    rgb(234, 202, 213) 52.7%,
+    rgb(220, 227, 239) 72.8%,
+    rgb(185, 205, 227) 81.1%,
+    rgb(154, 180, 212) 102.4%
+  );
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #352961;
+}
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #352961;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background-color: #f6e5e5;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  margin-bottom: 30px;
+}
+
+.instructions {
+  padding: 16px;
+  border: 1px solid #e6b2c6;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  background-color: #f6e5e5;
+}
+
+.submitbutton {
+  margin-left: 10px;
+  background: #e6b2c6;
+  color: #352961;
+  border: none;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 760;
+}
+
+.joke {
+  font-size: 16px;
+  background-color: #e6b2c6;
+  padding: 20px;
+  line-height: 2;
+  font-weight: 700;
+  border-left: 3px solid #f6e5e5;
+  border-right: 3px solid #f6e5e5;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+  color: #352961;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #352961;
+  margin-top: 30px;
 }
