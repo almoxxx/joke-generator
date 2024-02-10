@@ -7,29 +7,37 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>joke generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic you want to make fun of"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="button" />
-        <div>This is where the joke will appear</div>
-      </form>
-    </main>
-    <footer>
-      OpenSourced and available on
-      <a href="https://github.com/almoxxx/joke-generator" target="_blank"
-        >Github</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Joke generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic you want to make fun of"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input
+            type="button"
+            class="submitbutton"
+            value="Submit"
+            id="submitButton"
+          />
+        </form>
 
+        <div class="joke">This is where the joke will appear</div>
+      </main>
+      <footer>
+        Opensourced and available on
+        <a href="https://github.com/almoxxx/joke-generator" target="_blank"
+          >Github</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
