@@ -15,6 +15,10 @@ function generateJoke(event) {
     "You are the funniest stand-up comedian in the world. Your mission is to generate a hilarious 3 sentence joke that will make the user laugh, using the prompt above, in basic html.";
   let url = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
 
+  let jokeElement = document.querySelector("#joke");
+  jokeElement.classList.remove("hidden");
+  jokeElement.innerHTML = `<span class= "blink"> Busy generating fun for you... </span>`;
+
   axios.get(url).then(displayJoke);
 }
 
