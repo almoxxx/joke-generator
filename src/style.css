@@ -9,6 +9,8 @@ body {
     rgb(154, 180, 212) 102.4%
   );
   font-family: Helvetica, Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -81,4 +83,18 @@ footer {
   font-size: 12px;
   color: #352961;
   margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s step-start 0s infinite;
 }
